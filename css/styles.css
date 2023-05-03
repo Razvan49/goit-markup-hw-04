@@ -82,21 +82,24 @@ ul {
   text-decoration: none;
 }
 
-.child {
-  margin: 0 50px 0 0;
-}
-
-.child-one {
-  margin-left: 93px;
-}
-.child-three {
-  padding-right: 0px;
-}
-
-.child-four {
+.contact {
   padding: 0;
-  margin-left: auto;
-  margin-right: 0;
+  margin: 0;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.logo-container {
+  flex-basis: 238px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .main-navigation .active {
@@ -106,6 +109,12 @@ ul {
 .main-navigation a:hover,
 .main-navigation a:focus {
   color: var(--link-active-color);
+}
+
+.super-nav-class {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .global-header .logo {
@@ -123,7 +132,6 @@ ul {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-right: 40px;
 }
 .global-header a.mail:hover,
 .global-header a.mail:focus {
@@ -136,6 +144,7 @@ ul {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .global-header a.phone-number:hover,
