@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META | Folosite de browser si motoarele de cautare -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mai întâi normalizarea -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- Apoi stilurile -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- TITLE | Acest text o sa aparata in bara de sus a browserului (TAB) -->
+    <title>Web Studio Homework Project</title>
+  </head>
+  <body>
+    <!-- HEADER | Partea de sus a unui site -->
+    <header class="global-header">
+      <div class="container global-container">
+        <a href="index.html" class="logo"><span class="web">Web</span>Studio</a>
+        <nav class="main-navigation">
+          <!-- Sectiunea nav, contine doar link-urile pentru navigatie -->
+          <!-- Vom adauga valoare pentru href atunci cand avem create si restul paginilor  -->
+          <!-- Link spre pagina acasa -->
+          <a href="./index.html" class="child child-one">Studio</a>
+          <a href="portfolio.html" class="active child child-two">Portfolio</a>
+          <a href="Contacts" class="child child-three">Contacts</a>
+        </nav>
+        <ul class="child child-four">
+          <a href="info@devstudio.com" class="mail">info@devstudio.com</a>
+          <a href="tel:+12127724150" class="phone-number">+1 212-772-4150</a>
+        </ul>
+      </div>
+    </header>
+    <!-- MAIN SECTION | Partea principala a site-ului nostru-->
+    <main>
+      <section class="section category-section">
+        <!-- CATEGORY SECTION | Aici sunt afisate rezultatele in functie de categoria selectata -->
+        <!-- FILTER SECTION | In aceasta sectiune putem selecta filtre prin apasarea 
+        butoanelor afisand  doar domeniile corespunzatoare filtrului sau toate domeniile prin apasarea 
+        butonului All-->
+        <section class="filter-buttons">
+          <div class="container">
+            <ul class="filter-section-button filter-section-flex">
+              <li><button type="button" class="item">All</button></li>
+              <li><button type="button" class="item">Web-sites</button></li>
+              <li><button type="button" class="item">Apps</button></li>
+              <li><button type="button" class="item">Design</button></li>
+              <li><button type="button" class="item last">Marketing</button></li>
+            </ul>
+          </div>
+        </section>
+        <div class="container">
+          <ul class="category-flex">
+            <li>
+              <img src="./images/portfolio/laptop.jpg" alt="Laptop image" width="370px" />
+              <div class="filter-item">
+                <p>Technoduck</p>
+                <em>Web-site</em>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/portfolio/basketball.jpg"
+                alt="Poster New Orlean vs Golden Star"
+                width="370px"
+              />
+              <div class="filter-item">
+                <p>Poster New Orlean vs Golden Star</p>
+                <em>Design</em>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/portfolio/seafood.jpg"
+                alt="Seafood Restaurant Logo"
+                width="370px"
+              />
+              <div class="filter-item">
+                <p>Seafood Restaurant</p>
+                <em>Apps</em>
+              </div>
+            </li>
+            <li>
+              <img src="./images/portfolio/headphones.jpg" alt="Headphone image" width="370px" />
+              <div class="filter-item">
+                <p>Project Prime</p>
+                <em>Marketing</em>
+              </div>
+            </li>
+            <li>
+              <img src="./images/portfolio/box.jpg" alt="Two Boxes image" width="370px" />
+              <div class="filter-item">
+                <p>Project Boxes</p>
+                <em>Apps</em>
+              </div>
+            </li>
+            <li>
+              <img src="./images/portfolio/computer.jpg" alt="Computer image" width="370px" />
+              <div class="filter-item">
+                <p>Inspiration has no Borders</p>
+                <em>Web-site</em>
+              </div>
+            </li>
+            <li class="last-li">
+              <img src="./images/portfolio/book.jpg" alt="a Book image" width="370px" />
+              <div class="filter-item">
+                <p>Limited Edition</p>
+                <em>Design</em>
+              </div>
+            </li>
+            <li>
+              <img src="./images/portfolio/letters.jpg" alt="Label image" width="370px" />
+              <div class="filter-item">
+                <p>Project LAB</p>
+                <em>Marketing</em>
+              </div>
+            </li>
+            <li>
+              <img src="./images/portfolio/tablet.jpg" alt="Table with keyboard image" />
+              <div class="filter-item">
+                <p>Growing Business</p>
+                <em>Apps</em>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER | Partea de jos a unui site  -->
+    <footer class="global-footer">
+      <div class="container footer-flex">
+        <div>
+          <a href="index.html" class="logo">Web<span class="studio">Studio</span></a>
+          <!-- ADDRESS | Adresa studioului -->
+          <address class="main-addres">
+            <p class="corection">695 Park Ave, NY 10065, USA</p>
+            <!-- INFO | Informatii contact -->
+            <div class="corection-link">
+              <a href="info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <div class="corection-link">
+              <a href="tel:+12127724150" class="phone-number">+1 212-772-4150</a>
+            </div>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
