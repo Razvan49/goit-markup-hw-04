@@ -5,6 +5,12 @@
   --link-color: #212121;
   --link-active-color: #2196f3;
   --second-section-color: #757575;
+  --dark-gray-section-color: #2f303a;
+  --light-gray-section-color: #f5f4fa;
+  --social-icons--normal-color: #afb1b8;
+  --social-icons--hover-color: #fff;
+  --social-icons--background-color: #2196f3;
+  --social-mail-icons--normal-color: #757575;
 }
 
 body {
@@ -46,6 +52,8 @@ ul {
 /* ALL SECTION CLASS */
 
 .section {
+  margin: auto;
+  width: 1600px;
   padding: 94px 0;
 }
 
@@ -155,8 +163,10 @@ ul {
 /* FIRST SECTION */
 
 .first-section {
-  background: #2f303a;
+  background: var(--dark-gray-section-color);
   text-align: center;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
 }
 
 .request-button {
@@ -199,20 +209,31 @@ ul {
   text-transform: uppercase;
 }
 
+.second-section-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray-section-color);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 /* THIRD SECTION */
 
 .third-section-flex {
   display: flex;
   justify-content: space-between;
 }
-.third-section .section {
+.third-section {
   padding-top: 0;
 }
 
 /* FOURTH SECTION  */
 
 .fourth-section {
-  background: #f5f4fa;
+  background: var(--light-gray-section-color);
 }
 
 .fourth-section-flex ul {
@@ -247,17 +268,69 @@ ul {
 }
 
 ul li div {
-  padding-top: 22px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 ul li p {
   margin: 0;
 }
-.filter-item {
-  padding: 20px 24px;
+/* Aici am introdus iconitele social media */
+
+.ourteam-list .icons-list .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  color: var(--social-icons--normal-color);
+}
+.icons-list .icons svg {
+  width: 20px;
+  height: 20px;
+}
+.icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+.ourteam-list .icons-list .icons:hover,
+.ourteam-list .icons-list .icons:focus {
+  color: var(--social-icons--hover-color);
+  background-color: var(--social-icons--background-color);
+  border-radius: 50%;
 }
 
+/* FIFTH SECTION  */
+
+.main-customers-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: var(--social-mail-icons--normal-color);
+}
+.customers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-icons--normal-color);
+  border-radius: 4px;
+}
+.main-customers-container .customers-container svg {
+  width: 106px;
+  height: 60px;
+}
+
+.main-customers-container .customers-container:hover,
+.main-customers-container .customers-container:focus {
+  color: var(--social-icons--background-color);
+  border: 1px solid var(--social-icons--background-color);
+  cursor: pointer;
+}
 /* GLOBAL FOOTER */
 
 .footer-flex {
@@ -268,7 +341,8 @@ ul li p {
 }
 
 .global-footer {
-  background: #2f303a;
+  background: var(--dark-gray-section-color);
+  padding: 0;
 }
 
 .global-footer a {
