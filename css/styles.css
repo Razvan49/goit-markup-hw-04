@@ -132,6 +132,8 @@ ul {
   color: #2196f3;
 }
 .global-header a.mail {
+  display: flex;
+  align-items: center;
   color: var(--second-section-color);
   font-weight: 500;
   font-size: 14px;
@@ -144,6 +146,7 @@ ul {
 }
 
 .global-header a.phone-number {
+  display: flex;
   color: var(--second-section-color);
   font-weight: 500;
   font-size: 14px;
@@ -155,6 +158,17 @@ ul {
 .global-header a.phone-number:hover,
 .global-header a.phone-number:focus {
   color: var(--link-active-color);
+}
+
+.contact .mail svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.contact .phone-number svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 /* FIRST SECTION */
