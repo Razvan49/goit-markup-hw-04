@@ -78,7 +78,7 @@ ul {
 .global-header {
   padding: 24px 0;
   background: #ffffff;
-  border: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .global-header a {
